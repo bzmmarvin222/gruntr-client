@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MainToolbarComponent } from './main-toolbar.component';
+import {MatToolbarModule} from "@angular/material";
 
 describe('MainToolbarComponent', () => {
   let component: MainToolbarComponent;
@@ -8,6 +9,7 @@ describe('MainToolbarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [MatToolbarModule],
       declarations: [ MainToolbarComponent ]
     })
     .compileComponents();
