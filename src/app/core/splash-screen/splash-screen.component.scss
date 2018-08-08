@@ -33,7 +33,7 @@ $animation_duration: 2s;
   0% { width: 0; }
   25% { width: 40%; transform: translateX(-50%) translateY(30%) rotate(720deg); }
   50% { }
-  75% { width: 40%; transform: translateX(-50%) translateY(30%) rotate(720deg); left: 50%; top: 0; }
+  75% { width: 40%; transform: translateX(-50%) translateY(30%) rotate(720deg); left: 52%; top: 0; }
   90% { opacity: 1; }
   100% { width: 30px; transform: translateX(0) translateY(0) rotate(0deg); left: -20px; top: -20px; opacity: 0; }
 }
@@ -42,7 +42,7 @@ $animation_duration: 2s;
   position: fixed;
   width: 0;
   padding: 2em;
-  left: 50%;
+  left: 52%;
   top: 0;
   transform: translateX(-50%) translateY(30%) rotate(0deg);
   animation-name: fade_logo;
