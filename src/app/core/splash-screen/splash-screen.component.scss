@@ -1,0 +1,50 @@
+$row_color_1: #D50000;
+$row_color_2: #827717;
+$row_color_3: #263238;
+$row_color_4: #F8BBD0;
+
+$row_colors: $row_color_1, $row_color_2, $row_color_3, $row_color_4;
+$animation_duration: 2s;
+
+@keyframes fade_top {
+  0% {height: 2000px;}
+  100% {height: 0;}
+}
+
+.splash_screen_wrapper {
+  width: 100%;
+
+  .animated_row {
+    background: red;
+
+    animation-name: fade_top;
+    animation-duration: $animation_duration;
+    animation-timing-function: ease-out;
+
+    @for $row_index from 1 through length($row_colors) {
+      &:nth-child(#{$row_index}) {
+        background: #{nth($row_colors, $row_index)};
+      }
+    }
+  }
+}
+
+@keyframes fade_logo {
+  0% { width: 0; }
+  25% { width: 40%; transform: translateX(-50%) translateY(30%) rotate(720deg); }
+  50% { }
+  75% { width: 40%; transform: translateX(-50%) translateY(30%) rotate(720deg); left: 50%; top: 0; }
+  90% { opacity: 1; }
+  100% { width: 30px; transform: translateX(0) translateY(0) rotate(0deg); left: -20px; top: -20px; opacity: 0; }
+}
+
+.logo {
+  position: fixed;
+  width: 0;
+  padding: 2em;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%) translateY(30%) rotate(0deg);
+  animation-name: fade_logo;
+  animation-duration: $animation_duration;
+}

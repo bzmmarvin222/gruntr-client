@@ -1,3 +1,21 @@
 .fill_between_spacer {
   flex: 1 1 auto;
 }
+
+$splash_delay: 2s;
+$animation_duration: 0.5s;
+
+@keyframes fade_logo_in {
+  0% {opacity: 0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.logo {
+  opacity: 1;
+  display: inline-block;
+  width: 30px;
+  padding-top: 2px;
+  animation-name: fade_logo_in;
+  animation-duration: $splash_delay + $animation_duration;
+}
