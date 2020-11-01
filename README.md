@@ -11,7 +11,7 @@ This is an example Angular2 Client. See [Gruntr](https://github.com/bzmmarvin222
 ### After Cloning
 After cloning the repo, you need to run `npm install`.
 After that, you can run `npm start` for the local dev server. Open [localhost:4200](http://localhost:4200) then.
-Alternatively you can run `npm innstall -g @angular/cli` to install the Angular CLI globally and use the commands from the section below.
+Alternatively you can run `npm install -g @angular/cli` to install the Angular CLI globally and use the commands from the section below.
 
 ***
 
